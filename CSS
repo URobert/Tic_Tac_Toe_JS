@@ -1,0 +1,159 @@
+body{
+ /* background: #72bcd4;*/
+ /* background:black; */
+ background: url("http://aspireblog.org/wp-content/uploads/2013/04/chalkboard.jpg");
+}
+
+h2{
+  font: 400 35px/1.5 'Pacifico', Helvetica, sans-serif;
+  color: white;
+  text-shadow: 3px 3px 0px rgba(0,0,0,0.1), 7px 7px 0px rgba(0,0,0,0.05);
+}
+
+p{
+color:white;
+font-size:30px;
+}
+
+#whoWon{
+  border: solid;
+  border-color:white;
+  display:inline-block;
+  border-radius: 1em;
+  padding: 10px;
+  margin-left: 8%;
+  margin-top: 65px;
+  position:relative;
+  float:left;
+ -webkit-transform: rotate(-45deg); 
+ -moz-transform: rotate(-45deg);  
+ filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=5);
+  
+}
+
+.topbuffer{
+  margin-top: 50px;
+}
+
+.toptinybuffer{
+  margin-top: 20px;
+}
+
+.container{
+ /* border:solid; */
+  /*background:#FF851B;*/
+ /* border-radius:1em;*/
+  width: 35%;
+  position:relative;
+}
+
+.leaderboard{
+  border:solid;
+  width:200px;
+  text-align: center;
+  margin-left:auto;
+  margin-right:auto;
+  border-radius:1em;
+  border-color:white;
+}
+
+.playerTurn{
+  border:solid;
+  width:200px;
+  text-align: center;
+  margin-left:auto;
+  margin-right:auto;
+  border-radius:1em;
+  border-color:white;
+}
+
+.square{
+ height: 120px;
+ color: white;
+ text-align: center;
+ vertical-align: middle;
+ line-height: 100px;
+ padding: 35px 15px 15px 15px;
+ font: 400 35px/1.5 'Pacifico', Helvetica, sans-serif;
+}
+
+#square1, #square4{
+  border-right:solid;
+  border-bottom:solid;
+}
+
+#square3, #square6{
+  border-left:solid;
+  border-bottom:solid;
+}
+
+#square2, #square5{
+  border-bottom:solid;
+}
+
+#square7{
+  border-right:solid;
+}
+
+#square9{
+  border-left:solid;
+}
+
+.wrapper{
+  text-align:center;
+}
+
+.btn-primary{
+ display: inline-block;
+-webkit-box-sizing: content-box;
+-moz-box-sizing: content-box;
+box-sizing: content-box;
+float: none;
+z-index: auto;
+width: 120px;
+height: auto;
+position: static;
+cursor: pointer;
+opacity: 1;
+margin: 0;
+padding: 9px 20px;
+overflow: hidden;
+border: 1px solid;
+-webkit-border-radius: 0;
+border-radius: 0;
+font: normal 19px/1 "Acme", Helvetica, sans-serif;
+color: rgba(0,0,0,1);
+text-align: center;
+-o-text-overflow: ellipsis;
+text-overflow: ellipsis;
+background: #ffffff;
+-webkit-box-shadow: 3px 3px 0 0 rgba(0,0,0,0.8) ;
+box-shadow: 3px 3px 0 0 rgba(0,0,0,0.8) ;
+text-shadow: 1px 1px 1px rgba(0,0,0,0.2) ;
+-webkit-transition: none;
+-moz-transition: none;
+-o-transition: none;
+transition: none;
+-webkit-transform: none;
+transform: none;
+-webkit-transform-origin: 50% 50% 0;
+transform-origin: 50% 50% 0;
+}
+
+
+span{
+  color:white;
+}
+
+#Pick1, #Pick2 {
+  font-weight:bold;
+}
+
+#Pick1:hover{
+  background:	#779ECB;
+
+}
+
+#Pick2:hover{
+   background:green;
+}
