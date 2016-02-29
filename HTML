@@ -1,0 +1,86 @@
+<link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link async href="http://fonts.googleapis.com/css?family=Acme" data-generated="http://enjoycss.com" rel="stylesheet" type="text/css"/>
+
+<title> Tic Tac Toe Game </title>
+<div class= "topbuffer"></div>
+<h2 align="center"> Tic Tac Toe Game </h2>
+<h2 align="center"> Good luck & Have Fun ! </h2>
+
+
+ <div class="wrapper">
+<button class="btn btn-primary" id="restart">Restart Board </button>
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-sm" id="symbol">Pick a Symbol</button>
+<button type="button" class="btn btn-primary" id="startGame">Start Game</button>
+</div> <!-- end of wrapper -->
+
+
+<div class= "toptinybuffer"></div>
+<div class="playerTurn"><span id="displayTurn"> You may begin !</span>
+</div>
+
+
+
+<div id="whoWon"><p id="winnerDisplay"> ??? ??? ??? </p></div>
+
+
+  
+<div class= "toptinybuffer"></div>
+<div class="container">
+
+      <div class="Board" onclick="clickHandler(event)">
+        
+          <div class= "row">
+    <div class = "col-xs-4 col-md-4 square" id="square1"></div>
+    <div class = "col-xs-4 col-md-4 square" id="square2"></div>  
+    <div class = "col-xs-4 col-md-4 square" id="square3"></div>  
+      </div> <!-- end of row -->
+        
+          <div class= "row">
+    <div class = "col-xs-4 col-md-4 square" id="square4"></div>
+    <div class = "col-xs-4 col-md-4 square" id="square5"></div>  
+    <div class = "col-xs-4 col-md-4 square" id="square6"></div>  
+      </div> <!-- end of row -->
+        
+          <div class= "row">
+    <div class = "col-xs-4 col-md-4 square" id="square7"></div>
+    <div class = "col-xs-4 col-md-4 square" id="square8"></div>  
+    <div class = "col-xs-4 col-md-4 square" id="square9"></div>  
+      </div> <!-- end of row -->
+        
+        </div> <!-- end of board -->
+
+</div> <!-- end of container --> 
+
+<!-- Experimenting with modals -->
+<!-- Small modal -->
+<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" id="myModal">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+            <div class="modal-header">
+       <h4 class="modal-title">Welcome to this JS Tic Tac Toe Game</h4> 
+         </div> <!-- end of modal header --> 
+      <div class="modal-body">Pick the symbol you would like to use:</div>
+      <div class="modal-footer">
+      <div class="row">
+        <div class="col-xs-3"></div>
+        <div class="col-xs-3"><button class="btn" id="Pick1">X</button></div>
+        <div class="col-xs-3"><button class="btn" id="Pick2">O</button></div>
+        <div class="col-xs-3"></div>
+      </div><!-- end of row -->
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End of modal -->
+
+<!-- Leaderboard below-->
+<div class= "toptinybuffer"></div>
+<div class="leaderboard">
+    <span>Player wins : </span><span id="pwins">0</span><br>
+    <span>Computer wins : </span><span id="cwins">0</span><br>
+    <span>Draws: </span><span id="draws">0</span>
+</div>
+<!-- End of leaderboard -->
+
+
+
